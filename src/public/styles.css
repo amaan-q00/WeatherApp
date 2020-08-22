@@ -1,0 +1,169 @@
+body {
+  color: #e8c9ea;
+  background-color: white;
+  font-family: arial;
+  margin: 0 auto;
+  max-width: 90vh;
+  padding: 0 16px;
+
+  display: flex;
+
+
+  min-height: 100vh;
+  flex-direction: column;
+}
+#main {
+  flex-grow: 1;
+}
+
+.msg {
+  text-align: center;
+  color: magenta;
+
+}
+
+.pcity,.pcountry,.ptemp,.pmin,.pmax,.pweather,.phumidity,.pwind {
+
+  color: #000fff;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.city,.country,.temp,.min,.max,.weather,.humidity,.wind {
+
+  color: #9800dd;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#help_error, #help ,#about,#error {
+  font-size: 30px;
+  color: magenta;
+}
+
+
+
+#line {
+  margin: 15px;
+}
+#line > a:link,#line > a:visited {
+  padding: 15px;
+  border-radius: 10px;
+  border-width: 3px;
+  color: white;
+  margin: 10px;
+  background-color: black;
+}
+
+.logo
+{
+  height: 70px;
+  padding-top: 15px;
+  background: black;
+}
+
+
+#bar {
+
+  background: white;
+  border-radius: 25px;
+  border-color: black;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+}
+::placeholder {
+  color: blue;
+  text-align: center;
+  font-size: 20px;
+}
+
+#check {
+  background: black;
+  border-radius: 20px;
+  color: white;
+  border: black;
+  height: 40px;
+  width: 80px;
+  margin: 20px;
+  font-size: 15px;
+}
+hr {
+  width: 85%;
+}
+
+#bar:hover,#check:hover,#line>a:hover {
+  outline: none;
+  transition: all 0.2s;
+  position: relative;
+}
+#bar:active,#check:active,#line>a:active {
+  position: relative;
+  top: 1px;
+}
+
+@media(max-width:320px) {
+  form {
+    margin-left: 0%;
+
+  }
+  #bar {
+    width: 80% !important;
+
+
+  }
+  #check {
+    width: 20%;
+
+  }
+
+}
+@media(max-width:360px) {
+  form {
+    margin-left: 0%;
+
+  }
+  #bar {
+    width: 80% !important;
+
+
+  }
+  #check {
+    width: 20%;
+
+  }
+
+}
+@media(max-width:420px) {
+  form {
+    margin-left: 0%;
+
+  }
+  #bar {
+    width: 80% !important;
+
+  }
+  #check {
+    width: 20%;
+  }
+
+}
+@media(max-width:460px) {
+  form {
+    margin-left: 0%;
+
+  }
+  #bar {
+    width: 80% !important;
+
+  }
+  #check {
+    width: 20%;
+  }
+
+
+
+}

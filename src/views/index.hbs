@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+{{>links}}
+
+<body>
+  <div id='main'>
+    {{>header}}
+    <form>
+      <center><input id='bar' placeholder='Enter city'>
+        <button id='check'>Check!</button>
+      </center>
+    </form>
+
+    <p class="msg">
+      Check your weather
+    </p>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="card card-default text-left col-md-8">
+        <div class="card-body">
+          <div class='pcity'>
+            City:
+            <div class='city'></div>
+          </div>
+          <div class='pcountry'>
+            Country:
+            <div class='country'>
+
+            </div>
+          </div>
+          <div class='pweather'>
+            Weather:
+            <div class='weather'>
+
+            </div>
+          </div>
+          <div class='ptemp'>
+            Average Temperature(°C):
+            <div class='temp'>
+
+            </div>
+          </div>
+          <div class='pmin'>
+            Min Temperature(°C):
+            <div class='min'>
+
+            </div>
+          </div>
+          <div class='pmax'>
+            Max Temperature(°C):
+            <div class='max'>
+
+            </div>
+          </div>
+          <div class='phumidity'>
+            Humidity(%):
+            <div class='humidity'>
+
+            </div>
+            <div class='pwind'>
+              Wind Speed(Km/h):
+              <div class='wind'>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+
+    {{>footer}}
+
+    {{>scripts}}
+  </body>
+</html>
