@@ -19,15 +19,15 @@ body {
 .msg {
   text-align: center;
   color: magenta;
+  margin: 10px;
 
 }
 
-.pcity,.pcountry,.ptemp,.pmin,.pmax,.pweather,.phumidity,.pwind {
+#pcity,#pcountry,#ptemp,#pmin,#pmax,#pweather,#phumidity,#pwind {
 
   color: #000fff;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-  font-size: 20px;
 }
 
 .city,.country,.temp,.min,.max,.weather,.humidity,.wind {
@@ -35,8 +35,8 @@ body {
   color: #9800dd;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
+  font-weight: bold;
   font-size: 20px;
-  display: inline-block;
 }
 
 #help_error, #help ,#about,#error {
@@ -57,113 +57,71 @@ body {
   margin: 10px;
   background-color: black;
 }
-
-.logo
-{
-  height: 70px;
-  padding-top: 15px;
-  background: black;
-}
-
-
-#bar {
-
-  background: white;
-  border-radius: 25px;
-  border-color: black;
-  height: 50px;
-  width: 300px;
-  text-align: center;
-}
 ::placeholder {
   color: blue;
   text-align: center;
   font-size: 20px;
 }
 
-#check {
-  background: black;
-  border-radius: 20px;
+.card {
+  min-height: 200px !important;
+  width: 100%;
+  margin-bottom: 20px !important;
+}
+
+/* ===========================
+   ====== Search Box ======
+   =========================== */
+
+.search
+{
+  border: 2px solid black;
+  overflow: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 65%;
+}
+
+.search input[type="text"]
+{
+  border: 0px;
+  width: 65%;
+  padding: 10px 10px;
+}
+
+.search input[type="text"]:focus
+{
+  outline: 0;
+}
+
+.search input[type="submit"]
+{
+  border: 0px;
+  background: none;
+  background-color: black;
   color: white;
-  border: black;
-  height: 40px;
-  width: 80px;
-  margin: 20px;
-  font-size: 15px;
-}
-hr {
-  width: 85%;
-}
-
-#bar:hover,#check:hover,#line>a:hover {
-  outline: none;
-  transition: all 0.2s;
-  position: relative;
-}
-#bar:active,#check:active,#line>a:active {
-  position: relative;
-  top: 1px;
+  float: right;
+  padding: 10px;
+  border-radius-top-right: 5px;
+  -moz-border-radius-top-right: 5px;
+  -webkit-border-radius-top-right: 5px;
+  border-radius-bottom-right: 5px;
+  -moz-border-radius-bottom-right: 5px;
+  -webkit-border-radius-bottom-right: 5px;
+  cursor: pointer;
 }
 
-@media(max-width:320px) {
-  form {
-    margin-left: 0%;
+/* ===========================
+   ====== Medua Query for Search Box ======
+   =========================== */
 
+@media only screen and (min-width : 150px) and (max-width : 780px) {
+
+  .search
+  {
+    width: 95%;
+    margin: 0 auto;
   }
-  #bar {
-    width: 80% !important;
-
-
-  }
-  #check {
-    width: 20%;
-
-  }
-
-}
-@media(max-width:360px) {
-  form {
-    margin-left: 0%;
-
-  }
-  #bar {
-    width: 80% !important;
-
-
-  }
-  #check {
-    width: 20%;
-
-  }
-
-}
-@media(max-width:420px) {
-  form {
-    margin-left: 0%;
-
-  }
-  #bar {
-    width: 80% !important;
-
-  }
-  #check {
-    width: 20%;
-  }
-
-}
-@media(max-width:460px) {
-  form {
-    margin-left: 0%;
-
-  }
-  #bar {
-    width: 80% !important;
-
-  }
-  #check {
-    width: 20%;
-  }
-
-
 
 }
