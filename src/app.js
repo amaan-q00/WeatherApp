@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 const weather = require('./utils')
+const port = process.env.PORT || 3000
 
 const app = express()
 
@@ -84,6 +85,6 @@ app.get('*', (req, res)=> {
 })
 
 
-app.listen(3000, ()=> {
+app.listen(port, ()=> {
   console.log('App is running on port 3000')
 })
