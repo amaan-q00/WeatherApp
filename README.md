@@ -6,7 +6,7 @@ A simple , node and express js based Web application
 How to run:
 You must have nodejs installed in your machine
 
-Clone the repo and run the Application with autorun.sh(for bash shell) file:
+Clone the repo and run the Application with run.sh(for bash shell) file:
 
 ```git clone https://github.com/Amaanx2056x/WeatherApp && cd WeatherApp && bash autorun.sh```
 
