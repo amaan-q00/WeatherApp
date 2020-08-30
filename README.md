@@ -8,7 +8,7 @@ You must have nodejs installed in your machine
 
 Clone the repo and run the Application with run.sh(for bash shell) file:
 
-```git clone https://github.com/Amaanx2056x/WeatherApp && cd WeatherApp && bash autorun.sh```
+```git clone https://github.com/Amaanx2056x/WeatherApp && cd WeatherApp && bash run.sh```
 
 For other shells, you can manually run the Application as:
 
