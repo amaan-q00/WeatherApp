@@ -88,5 +88,5 @@ app.get('*', (req, res)=> {
 
 
 app.listen(port, ()=> {
-  console.log('App is running on port '+port)
+  console.log('Serving application at http://127.0.0.1:'+port)
 })

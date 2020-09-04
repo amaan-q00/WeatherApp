@@ -1,6 +1,4 @@
-npm i
-cd src
-echo "GOTO YOUR BROWSER AND ENTER - localhost:3000"
+#!/usr/bin/env bash
 
-node app.js
-
+npm i --silent
+node src/app.js

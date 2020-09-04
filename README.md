@@ -1,22 +1,19 @@
 # WeatherApp
-A simple , node and express js based Web application 
 
-## A simple Application to check weather for any city
+A simple Web application to check weather for any city, built with nodeJs and expressJs
 
-How to run:
-You must have nodejs installed in your machine
+## Requirements
 
-Clone the repo and run the Application with run.sh(for bash shell) file:
+- Node.js
+- bash
 
-```git clone https://github.com/Amaanx2056x/WeatherApp && cd WeatherApp && bash run.sh```
+## How to run
 
-For other shells, you can manually run the Application as:
+- Clone the repo and execute `run.sh` file:
 
-``` git clone https://github.com/Amaanx2056x/WeatherApp```
+```shell
+git clone https://github.com/Amaanx2056x/WeatherApp && cd WeatherApp;
+chmod +x run.sh; ./run.sh;
+```
 
-```cd WeatherApp/src```
-
-```node app.js```
-
-
-You can check the Application in your browser at localhost:3000
+- You can check the application in your browser at localhost:3000
