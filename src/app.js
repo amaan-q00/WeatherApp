@@ -9,9 +9,10 @@ const app = express()
 const port = process.env.PORT || 3000
 
 const root = path.join(__dirname, '/public')
-const partials = path.join(__dirname, '/partials')
+const partials = path.join(__dirname, '../views/partials')
 
 app.set('view engine', 'hbs')
+app.set('views', path.join(__dirname, '../views'));
 app.use(express.static(root))
 
 hbs.registerPartials(partials)
@@ -20,9 +21,7 @@ hbs.registerPartials(partials)
 //homepage
 app.get('', (req, res)=> {
   res.render('index', {
-    title: 'HOME',
-    text: 'This is homepage',
-    name: 'Amaan'
+    title: 'HOME'
   })
 })
 
@@ -51,8 +50,7 @@ app.get('/help', (req, res)=> {
   res.render('help',
     {
       title: 'HELP',
-      text: 'This is help page',
-      name: 'Amaan'
+      text: 'This is help page'
     })
 })
 
@@ -62,7 +60,6 @@ app.get('/about', (req, res)=> {
     {
       title: 'ABOUT',
       text: 'This is about page',
-      name: 'Amaan'
     })
 })
 
@@ -72,7 +69,6 @@ app.get('/help/*', (req, res)=> {
     {
       title: '404 ERROR',
       text: `THE HELP PAGE YOU'RE LOOKING FOR DOES NOT EXIST `,
-      name: 'Amaan'
     })
 })
 
@@ -82,7 +78,6 @@ app.get('*', (req, res)=> {
     {
       title: '404 ERROR',
       text: 'THIS PAGE DOES NOT EXISTS',
-      name: 'Amaan'
     })
 })
 

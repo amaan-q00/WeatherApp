@@ -4,10 +4,10 @@
 {{>links}}
 
 <body>
-  <div id='main'>
+  <div id='container'>
     {{>header}}
     <center>
-      <div class="search">
+      <div class="search m-3">
 
         <form class="search-form">
 
@@ -23,112 +23,109 @@
       Check your weather
     </p>
     <div class="container justify-content-center">
-
-      <div class="card-deck ">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card text-white text-center border-success">
-              <div class="card-body">
-                <h5 class="card-title" id="pcity">CITY</h5>
-                <p class="card-text">
-                  <p class="city">
-                    -
-                  </p>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-white text-center border-success">
+            <div class="card-body">
+              <h5 class="card-title" id="pcity">CITY</h5>
+              <p class="card-text">
+                <p class="city">
+                  -
                 </p>
-              </div>
+              </p>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card text-white text-center border-success  ">
-              <div class="card-body">
-                <h5 class="card-title" id="pcountry">COUNTRY</h5>
-                <p class="card-text">
-                  <p class="country">
-                    -
-                  </p>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white text-center border-success  ">
+            <div class="card-body">
+              <h5 class="card-title" id="pcountry">COUNTRY</h5>
+              <p class="card-text">
+                <p class="country">
+                  -
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card text-white text-center border-success  ">
-              <div class="card-body">
-                <h5 class="card-title" id="pweather">WEATHER</h5>
-                <p class="card-text">
-                  <p class="weather">
-                    -
-                  </p>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card text-white text-center border-success  ">
-              <div class="card-body">
-                <h5 class="card-title" id="ptemp">AVERAGE TEMPERATURE (°C)</h5>
-                <p class="card-text">
-                  <p class="temp">
-                    -
-                  </p>
-                </p>
-              </div>
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card text-white text-center border-success  ">
-              <div class="card-body">
-                <h5 class="card-title" id="pmin">MIN TEMPERATURE (°C)</h5>
-                <p class="card-text">
-                  <p class="min">
-                    -
-                  </p>
+        <div class="col-md-3">
+          <div class="card text-white text-center border-success  ">
+            <div class="card-body">
+              <h5 class="card-title" id="pweather">WEATHER</h5>
+              <p class="card-text">
+                <p class="weather">
+                  -
                 </p>
-              </div>
+              </p>
             </div>
           </div>
-
-          <div class="col-md-3">
-            <div class="card text-white text-center border-success  ">
-              <div class="card-body">
-                <h5 class="card-title" id="pmax">MAX TEMPERATURE (°C)</h5>
-                <p class="card-text">
-                  <p class="max">
-                    -
-                  </p>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white text-center border-success  ">
+            <div class="card-body">
+              <h5 class="card-title" id="ptemp">AVERAGE TEMPERATURE (°C)</h5>
+              <p class="card-text">
+                <p class="temp">
+                  -
                 </p>
-              </div>
+              </p>
             </div>
           </div>
+        </div>
+      </div>
 
-
-
-          <div class="col-md-3">
-            <div class="card text-white text-center border-success  ">
-              <div class="card-body">
-                <h5 class="card-title" id="phumidity">HUMIDITY (%)</h5>
-                <p class="card-text">
-                  <p class="humidity">
-                    -
-                  </p>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-white text-center border-success  ">
+            <div class="card-body">
+              <h5 class="card-title" id="pmin">MIN TEMPERATURE (°C)</h5>
+              <p class="card-text">
+                <p class="min">
+                  -
                 </p>
-              </div>
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-3">
-            <div class="card text-white text-center border-success  ">
-              <div class="card-body">
-                <h5 class="card-title" id="pwind">WIND SPEED (KM/H)</h5>
-                <p class="card-text">
-                  <p class="wind">
-                    -
-                  </p>
+        <div class="col-md-3">
+          <div class="card text-white text-center border-success  ">
+            <div class="card-body">
+              <h5 class="card-title" id="pmax">MAX TEMPERATURE (°C)</h5>
+              <p class="card-text">
+                <p class="max">
+                  -
                 </p>
-              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-3">
+          <div class="card text-white text-center border-success  ">
+            <div class="card-body">
+              <h5 class="card-title" id="phumidity">HUMIDITY (%)</h5>
+              <p class="card-text">
+                <p class="humidity">
+                  -
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card text-white text-center border-success  ">
+            <div class="card-body">
+              <h5 class="card-title" id="pwind">WIND SPEED (KM/H)</h5>
+              <p class="card-text">
+                <p class="wind">
+                  -
+                </p>
+              </p>
             </div>
           </div>
         </div>
@@ -136,7 +133,7 @@
     </div>
 
     {{>footer}}
-
     {{>scripts}}
-  </body>
+  </div>
+</body>
 </html>
